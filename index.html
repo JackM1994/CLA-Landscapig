@@ -1,0 +1,191 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
+  <title>CLA Landscaping</title>
+  
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <!-- Mobile Menu -->
+  <div class="mobile-container">
+    <div class="topnav">
+        <a href="#home"  id="logos" class="active">CLA</a>
+        <div id="menuItems">
+            <a href="#aboutus">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="openMenu()"><i class="fa fa-bars"></i></a>
+    </div>
+   <!-- Desktop Nav -->
+   <div class="desktop-nav">
+       <li class="desktop-items"><a href="#home" id="cla" class="active"><img class="iconic"src="images/digger.png"/></a></li> 
+       <ul class="nav-menu">
+           <li class="desktop-items"><a href="#aboutus">About Us</a></li>
+           <li class="desktop-items"><a href="#services">Services</a></li> 
+           <li class="desktop-items"><a href="#projects">Projects</a></li>
+           <li class="desktop-items"><a href="#contact">Contact Us</a></li>
+       </div>
+    <div class="home">
+        <h3 class="company-title">CLA Landscaping</h3>
+        <p class="tel">Tel: 555-555-5555</p>
+        <a class="explore" href="#about"><button class="explored">Learn More </button></a>
+    </div>
+  </div>
+
+  <!-- About Us -->
+  <div class="about" id="aboutus">
+      <div class="about-img-container">
+          <img src="images/about.jpeg" alt="about-image" class="about-img"/>
+      </div>
+      <div class="about-intro">
+        <h3 class="about-header">About Us</h3>
+          <p class="intro">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, but also the leap into electronic typesetting, 
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+      </div>
+  </div>
+
+  <!-- Services -->
+  <div class="service" id="services">
+      <h3 class="service-header">Services</h3>
+      <p class="service-details">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      <div class="cards">
+          <div class="card">
+                <h5 class="number">01</h5>
+                <div class="card-img-container">
+                </div>
+                <h3 class="service-title">Maintenance</h3>
+                <p class="service-intro">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          </div>
+          <div class="card">
+                <h5 class="number">02</h5>
+                <div class="card-img-container" id="service2">
+                </div>
+                <h3 class="service-title">Tree and Shrub Planting</h3>
+                <p class="service-intro">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            </div>
+            <div class="card">
+                <h5 class="number">03</h5>
+                <div class="card-img-container" id="service3">
+                </div>
+                <h3 class="service-title">Construction</h3>
+                <p class="service-intro">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            </div>
+      </div>
+  </div>
+
+  <!-- Projects -->
+  <div class="project" id="projects">
+      <h3 class="projects-header">Projects</h3>
+      <p class="projects-details">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <div class="project-slider">
+        <div class="project-div mySlides fade" >
+            <div class="img-project">
+                <div class="number-div">
+                    <p class="number-project">01</p>
+                </div>
+                <img src="images/home.jpeg" alt="" class="project-image">
+            </div>
+            <div class="project-details">
+              <div class="project-name-div">
+                  <h3 class="project-name">Project 01</h3>
+              </div>
+              <h5 class="area">St. Albert</h5>
+              <p class="project-intro">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                  when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+        </div>
+        <div class="project-div mySlides fade">
+          <div class="img-project">
+              <div class="number-div">
+                  <p class="number-project">02</p>
+              </div>
+              <img src="images/home.jpeg" alt="" class="project-image">
+          </div>
+          <div class="project-details">
+            <div class="project-name-div">
+                <h3 class="project-name">Project 02</h3>
+            </div>
+            <h5 class="area">St. Albert</h5>
+            <p class="project-intro">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+      </div>
+      <div class="project-div mySlides fade">
+          <div class="img-project">
+              <div class="number-div">
+                  <p class="number-project">03</p>
+              </div>
+              <img src="images/home.jpeg" alt="" class="project-image">
+          </div>
+          <div class="project-details">
+            <div class="project-name-div">
+                <h3 class="project-name">Project 03</h3>
+            </div>
+            <h5 class="area">St. Albert</h5>
+            <p class="project-intro">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+      </div>
+      <div class="project-div mySlides div">
+          <div class="img-project">
+              <div class="number-div">
+                  <p class="number-project">04</p>
+              </div>
+              <img src="images/home.jpeg" alt="" class="project-image">
+          </div>
+          <div class="project-details">
+            <div class="project-name-div">
+                <h3 class="project-name">Project 04</h3>
+            </div>
+            <h5 class="area">St. Albert</h5>
+            <p class="project-intro">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <!-- The dots/circles -->
+     <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+     </div>
+    </div>
+  </div>
+  
+  
+  <!-- JS File -->
+  <script src="main.js"></script>
+</body>
+</html>
