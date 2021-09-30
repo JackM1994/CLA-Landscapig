@@ -6,7 +6,7 @@ Global Elements
 }
 html, body {
 	min-height: 100%;
-	background: #fff;
+    background-color: #3a3535;
 	color: #000;
 }
 	/* sets the body height of the browser, so that backgrounds and div heights work correctly. Color and background will almost certainly be altered; they are just placeholders */
@@ -168,13 +168,15 @@ p{
     position: relative;
     font-family: 'Epilogue', sans-serif;
     background: #fff;
-    margin-top: -65px;
+    margin-top: -175px;
+    padding-bottom: 50px;
   }
   .about-header{
     font-size: 3rem;
     text-align: left;
   }
   .about-img-container{
+    padding: 50px;
     width: 80%;
     margin: 11rem auto;
     margin-bottom: 1rem;
@@ -234,7 +236,7 @@ p{
 }
 /* Services Section */
 .service{
-    margin-top: 100px;
+    margin-top: -78px;
     height: auto;
     width: auto;
     background-color:#36384c;
@@ -490,6 +492,7 @@ p{
     background: #464646;
     margin: 0 auto;
     color: #a5a5a5;
+    margin-bottom: 40px;
 }
 .about-footer,
 .footer-nav,
@@ -574,4 +577,22 @@ p{
 .facebook{
     width:32px;
     height: 32px;
+}
+/* Media Queries footer */
+@media screen and (min-width: 980px){
+    .top-half{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        padding-top: 180px;
+    }
+    .about-footer{
+        width: 30%;
+    }
+    .footer-nav{
+        width: 30%;
+    }
+    .working-hours{
+        width: 30%;
+    }
 }
