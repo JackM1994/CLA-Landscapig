@@ -485,3 +485,93 @@ p{
         padding-bottom: 5rem;
     }
 }
+/* Footer */
+#footer{
+    background: #464646;
+    margin: 0 auto;
+    color: #a5a5a5;
+}
+.about-footer,
+.footer-nav,
+.working-hours{
+    padding: 40px 20px;
+}
+.footer-nav,
+.working-hours{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer-heading{
+    color: #fff;
+    font-size: 1rem;
+}
+.about-us-p,
+.footer-list,
+.workdays{
+    font-weight: 300;
+    width: 80%;
+    font-size: .90rem;
+}
+.footer-list{
+    list-style-type: disclosure-open;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.workdays{
+    width: 100%;
+    list-style-type: none;
+    padding: 5px;
+    border-bottom: solid 2px #4B4E6A;
+    text-align: left;
+    margin-left:-47px;
+}
+.right{
+    float: right;
+}
+.contact-info{
+    background-color: #3a3535;
+}
+
+.cLogo{
+    width: 75px;
+    display: block;
+    margin: 10px auto;
+    padding-top: 50px;
+}
+.company-name,
+.company-number{
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 1rem;
+}
+.email-contact{
+    margin-top:35px;
+}
+.email-text{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    font-size: 0.85rem;
+}
+
+.emailAddress{
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.social{
+    text-align: center;
+}
+.socialIcons{
+    list-style-type: none;
+    padding: 10px;
+    display: inline-block;
+    margin: 20px;
+}
+.facebook{
+    width:32px;
+    height: 32px;
+}
