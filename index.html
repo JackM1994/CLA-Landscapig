@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <title>CLA Landscaping</title>
   
   <link rel="stylesheet" href="styles.css">
@@ -52,8 +54,8 @@
           <img src="images/about.jpeg" alt="about-image" class="about-img"/>
       </div>
       <div class="about-intro">
-        <h3 class="about-header">About Us</h3>
-          <p class="intro">
+        <h3 class="about-header" data-aos="fade-down">About Us</h3>
+          <p class="intro"data-aos="fade-down">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
             when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -66,9 +68,9 @@
 
   <!-- Services -->
   <div class="service" id="services">
-      <h3 class="service-header">Services</h3>
-      <p class="service-details">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-      <div class="cards">
+      <h3 class="service-header" data-aos="fade-down">Services</h3>
+      <p class="service-details" data-aos="fade-down">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      <div class="cards" data-aos="zoom-in-right" data-aos-delay="300"  data-aos-easing="ease-in-back"  data-aos-duration="1000">
           <div class="card">
                 <h5 class="number">01</h5>
                 <div class="card-img-container">
@@ -101,8 +103,8 @@
 
   <!-- Projects -->
   <div class="project" id="projects">
-      <h3 class="projects-header">Projects</h3>
-      <p class="projects-details">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <h3 class="projects-header" data-aos="fade-down">Projects</h3>
+      <p class="projects-details" data-aos="fade-down">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
       <div class="project-slider">
         <div class="project-div mySlides fade" >
             <div class="img-project">
@@ -256,5 +258,8 @@
   
   <!-- JS File -->
   <script src="main.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
