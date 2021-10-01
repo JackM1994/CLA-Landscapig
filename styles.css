@@ -120,8 +120,8 @@ p{
           display: none;
       }
       .iconic{
-        height: 64px;
-        width:64px;
+        height: auto;
+        width:100px;
     }
       .desktop-nav{
         display: flex;
@@ -239,9 +239,11 @@ p{
     margin-top: -78px;
     height: auto;
     width: auto;
-    background-color:#36384c;
+    /* background-color:#36384c; */
+    background-color: #366355;
     color: #fff;
     margin-bottom: 140px;
+    padding-bottom: 100px;
 }
 .service-header{
     text-align: left;
@@ -256,9 +258,10 @@ p{
     margin-top: -6rem;
 }
 .card{
-    width: 90%;
-    height: 735px;
-    background-color: #366355;
+    width: 70%;
+    height: auto;
+    /* background-color: #366355; */
+    background-color: rgb(245, 245, 245);
     border-bottom: #fff 10px solid;
     margin: 0 auto;
     transition: ease .3s;
@@ -272,30 +275,37 @@ p{
 .number{
     text-align: left;
     padding: 1rem;
+    color: #000;
 }
 .card-img-container{
     margin: 0 auto;
-    border-radius: 50%;
-    background: url(images/main-service.jpeg); 
+    background: url(images/mowing.png); 
     background-position: 50% 50%;
     background-size: cover;
-    border-radius: 50%;
-    height:200px;
-    width:200px;
+    height:100px;
+    width:100px;
+    margin-top: -50px;
 }
 .service-title, .service-intro{
     text-align: center;
+    font-weight: 200;
+    font-family: 'Epilogue';
+    font-size: 1.2rem;
+    color: #000;
 }
 .service-intro{
     padding: 1rem 5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+    font-size: 1rem;
 
 }
 #service2{
-    background: url(images/plant.jpeg);
+    background: url(images/planting.png);
     background-size: cover;
 }
 #service3{
-    background: url(images/mini-digger.jpeg);
+    background: url(images/digger.png);
     background-size: cover;
 }
 /* Media Queries Service */
@@ -305,7 +315,7 @@ p{
         flex-direction: row;
     }
     .card{
-      width: 30%;  
+      width: 25%;  
     }
 }
 
@@ -314,12 +324,13 @@ p{
     height: auto;
     width: auto;
     margin: 0 auto;
-    background-color: #4B4E6A;
+    /* background-color: #4B4E6A; */
+    background-color: #e6dac3;
     margin-top: -142px;
+    color: #000;
 }
 .projects-header,
 .projects-details{
-    color: #fff;
     padding: 2rem;
     padding-top: 5rem;
     text-align: left;
@@ -368,6 +379,8 @@ p{
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    margin-top: 15px;
+    margin-bottom: 100px;
   }
   
   .active, .dot:hover {
@@ -394,7 +407,7 @@ p{
 .project-div{
     width: 100%;
     height: auto;
-    background-color: #3F364C;
+    background-color: #366355;
 }
 .img-project{
     margin: 0 auto;
@@ -421,7 +434,7 @@ p{
 }
 .project-name-div{
     height: 5rem;
-    background-color:#4B4E6A;
+    background-color:#14a76c;
     color: #fff;
 }
 .project-name{
@@ -429,13 +442,14 @@ p{
     text-align: left;
 }
 .area{
-    color: #14a76c;
     padding: 2rem;
+    color: #fff;
 }
 
 .project-intro{
     padding: 2rem;
     padding-bottom: 5rem;;
+    color: #fff;
 }
 /* Media Queries Projects */
 @media screen and (min-width: 980px){
@@ -480,6 +494,7 @@ p{
         padding: 0;
         padding-bottom: 0rem;
         padding-left: 4rem;
+        
     }
     .project-intro{
         padding-left: 4rem;
@@ -537,7 +552,7 @@ p{
 }
 
 .cLogo{
-    width: 75px;
+    width: 175px;
     display: block;
     margin: 10px auto;
     padding-top: 50px;
