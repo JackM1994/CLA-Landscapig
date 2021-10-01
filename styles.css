@@ -93,6 +93,8 @@ p{
       font-size: 1.4rem;
       transform: translateX(-50%) translateY(1025%);
       text-align: center;
+      color: inherit;
+      text-decoration: none;
   }
   .explore{
       position: absolute;
@@ -113,9 +115,20 @@ p{
   .explored:hover{
       cursor: pointer;
   }
+  #app{
+      display: none;
+  }
 
   /* Media Queries Home */
   @media screen and (min-width: 980px){
+      .mobile-container{
+          background: #366355;
+          height: 1000px;
+      }
+     
+      .company-title{
+          display: none;
+      }
       .topnav{
           display: none;
       }
@@ -140,27 +153,142 @@ p{
           text-decoration: none;
           cursor: pointer;
       }
+      .desktop-items a:hover{
+          color: yellow;
+      }
       .active{
         background-color: inherit;
       }
-      .home{
-          margin-top: -165px;
+      #app{
+          z-index: 100;
+          display: block;
       }
-      .company-title{
-        position: relative;
-        width: 28%;
-        transform: translate(-150%, 150%);
-        font-size: 4rem;
+      #app{
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+          align-items: center;
+          padding-bottom: 4vmin;
+          height: 90vh;
+          width: 100%;
+          background: inherit;
+          color: #fff;
       }
-      .tel{
-        position: relative;
-        transform: translate(-78%, 665%);
+      .titles{
+        padding-left: 1em;
+        grid-column: 1 / -1;
+        grid-row: 1; 
+        font-size: 7vw;
+        width: 100%;
+        z-index: 2;
+        margin-top: 300px;
       }
-      .explore{
-        margin-top: -190px;
-        margin-left: -28%;
+      .titles > .titles-inner{
+          display: inline-block;
       }
-  }
+      @keyframes text-clip {
+        from {
+          clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+        }
+        to {
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+      }
+      
+      @keyframes outer-left {
+        from {
+          transform: translateX(50%);
+        }
+        to {
+          transform: none;
+        }
+      }
+      
+      @keyframes inner-left {
+        from {
+          transform: translateX(-50%);
+        }
+        to {
+          transform: none;
+        }
+      }
+      .cla,
+      .landscaping{
+        animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+    }
+
+    .titles-inner {
+    display: inline-block;
+    animation: inner-left 1s 1s ease both;
+    }
+
+    .clainner {
+    display: inline-block;
+    animation: inner-left 1s 1s ease both,
+        text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+    }
+
+    .landscapinginner {
+    animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+    }
+
+    .titles {
+    animation: outer-left 1s 1s ease both;
+    }
+
+    .cla > .clainner {
+        display: inline-block;
+    }
+
+    .landscaping {
+    display: inline-block;
+    }
+
+    .bimage {
+    grid-row: 1;
+    grid-column: 2;
+    margin-left: -2rem;
+    opacity: 0.9;
+    margin-top: 2rem;
+    animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
+    }
+
+    @keyframes image-in {
+        from {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        }
+        to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .home{
+        margin-top: -165px;
+    }
+    /* .company-title{
+      position: relative;
+      width: 28%;
+      transform: translate(-150%, 150%);
+      font-size: 4rem;
+    } */
+    .tel{
+      position: relative;
+      transform: translate(-78%, 2650%);
+    }
+    .explore{
+      margin-top: 250px;
+      margin-left: -28%;
+    }
+}
+
+
+
+      
+
   /* About Section */
   .about{
     height: auto;
@@ -236,7 +364,7 @@ p{
 }
 /* Services Section */
 .service{
-    margin-top: -78px;
+    margin-top: -180px;
     height: auto;
     width: auto;
     /* background-color:#36384c; */
@@ -329,11 +457,15 @@ p{
     margin-top: -142px;
     color: #000;
 }
+.projects-header{
+    font-size: 3rem;
+}
 .projects-header,
 .projects-details{
     padding: 2rem;
     padding-top: 5rem;
     text-align: left;
+    
 }
 .projects-details{
     padding-top: 1rem;
@@ -485,6 +617,7 @@ p{
     }
     .project-name-div{
         margin-top: 60px;
+        margin-left: 503px;
     }
     .project-name{
         padding: 0;
@@ -534,6 +667,13 @@ p{
     list-style-type: disclosure-open;
     padding: 3px;
     cursor: pointer;
+}
+.footer-list a {
+    text-decoration: none;
+    color:#a5a5a5;
+}
+.footer-list a:hover{
+    color: yellow;
 }
 
 .workdays{
@@ -599,7 +739,7 @@ p{
         display: flex;
         justify-content: space-between;
         flex-direction: row;
-        padding-top: 180px;
+        padding-top: 100px;
     }
     .about-footer{
         width: 30%;
